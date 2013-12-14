@@ -1,9 +1,15 @@
 doctype 5
 html
   head
-    title node-webapp-seed
+    title Merry Christmas 2013
     link(rel='stylesheet', href='/static/style.css')
 
+    script(src="http://code.jquery.com/jquery-1.10.1.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js")
+    script.
+      $(function(){
+        $(".video").fitVids();
+      });
   body
 
     block content
