@@ -1,19 +1,37 @@
 body
-  padding: ($base-line-height * 3) $col-edge-padding
+  padding: $base-line-height $col-edge-padding
   font-family: $sans-font-family
   color: #fff
-  background: cornflowerblue
+  background: linear-gradient(bottom left, #59c6f2 0%, #d3eef6 20%, #dfebb5 40%, #a3d8c1 100%)
 
 .title
   display: block
-  margin: 0 auto 50px auto
+  margin: 0 auto 20px auto
+  max-width: 100%
 
 .message
   max-width: 100%
   width: 960px
   margin: 0 auto
-  font-size: 18px
-  line-height: 24px
+  font-size: 16px
+  line-height: 20px
 
   p + p
-    margin-top: 25px
+    margin-top: 20px
+
+
+@media screen and (min-width: 760px)
+
+  body
+    padding: ($base-line-height * 3) $col-edge-padding
+
+  .title
+    margin-bottom: 50px
+
+  .message
+    font-size: 20px
+    line-height: 26px
+
+    p + p
+      margin-top: 25px
+
