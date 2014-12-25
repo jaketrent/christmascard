@@ -1,17 +1,27 @@
 const React = require('react')
-const $ = require('jquery')
 
+const Banner = require('./banner')
+const Columns = require('./columns')
+const Family = require('./family')
+const Message = require('./message')
+const Title = require('./title')
+
+require('style-loader!css!x-flex')
 require('./styles/index.scss')
 
 module.exports = React.createClass({
 
-  displayName: 'card2014',
+  displayName: 'Card2014',
 
   render () {
     return (
       <div>
-        <div className="banner"></div>
-        <h1>Merry Christmas</h1>
+        <Banner />
+        <Title />
+        <Columns>
+          <Message />
+          <Family />
+        </Columns>
       </div>
     )
   }

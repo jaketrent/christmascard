@@ -1,0 +1,30 @@
+.family {
+  color: #2d2d2d;
+}
+.family__list {
+  list-style: none;
+  margin-left: 0;
+}
+.family__list-item {
+  margin-bottom: 35px;
+  clear: both;
+}
+.family__name {
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+.family__desc {
+  display: block;
+  font-size: 20px;
+  line-height: 1em;
+}
+.family__photo {
+  width: 75px;
+  height: 75px;
+  margin: 0 20px 0 0;
+  float: left;
+  border-radius: 50%;
+  background-position: 0 0;
+  background-size: cover;
+}
