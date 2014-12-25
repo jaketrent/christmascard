@@ -21,7 +21,7 @@ module.exports = {
       NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development')
     }),
     new HtmlWebpackPlugin({
-      title: 'Jake\'s Books'
+      title: 'Merry Christmas 2014 from the Trents'
     })
   ],
   resolve: {
