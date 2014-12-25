@@ -24,8 +24,8 @@ module.exports = React.createClass({
         </p>
         <p>
           We have been touched again this year to realize our great dependence on Jesus Christ for our happiness
-          and welfare.  He has been generous and gracious to us at every opportunity.  We are eternally thank
-          ful to our Heavenly Father for the gift of His divine Son.
+          and welfare.  He has been generous and gracious to us at every opportunity.  We are eternally thankful
+          to our Heavenly Father for the gift of His divine Son.
         </p>
         <p>
           Merry Christmas, and God bless us, every one!

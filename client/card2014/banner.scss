@@ -1,7 +1,22 @@
+@-webkit-keyframes rotating {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 .banner {
+  min-height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: rotating 2s linear infinite;
+}
+.banner--background-ready {
   min-height: 685px;
   background-position: center bottom;
   background-size: cover;
-}
+  -webkit-animation: none;
 
-// TODO: add class that can transition opacity 0->1 after img load
+}

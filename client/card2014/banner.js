@@ -1,8 +1,9 @@
-const React = require('react')
+const React = require('react/addons')
 const $ = require('jquery')
 
 require('./banner.scss')
 const bannerImg = require('./images/nativity.jpg')
+const hollyImg = require('./images/holly.png')
 
 module.exports = React.createClass({
 
@@ -10,7 +11,7 @@ module.exports = React.createClass({
 
   getInitialState() {
     return {
-      backgroundImage: ''
+      backgroundImage: hollyImg
     }
   },
 
@@ -18,9 +19,12 @@ module.exports = React.createClass({
     const reactComponent = this
     $('<img/>').attr('src', bannerImg).load(function () {
       $(this).remove() // prevent memory leak
-      reactComponent.setState({
-        backgroundImage: bannerImg
-      })
+      setTimeout(function fakeTimeDelayToEnjoyTheHolly() {
+        reactComponent.setState({
+          backgroundReady: true,
+          backgroundImage: bannerImg
+        })
+      }, 1000)
     })
   },
 
@@ -30,7 +34,16 @@ module.exports = React.createClass({
     }
   },
 
+  renderClassNames: function () {
+    const cx = React.addons.classSet
+    const classes = cx({
+      banner: true,
+      'banner--background-ready': this.state.backgroundReady
+    })
+    return classes
+  },
+
   render() {
-    return <div className="banner" style={this.renderStyle()}></div>
+    return <div className={this.renderClassNames()} style={this.renderStyle()}></div>
   }
 })

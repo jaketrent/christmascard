@@ -13,12 +13,11 @@ module.exports = React.createClass({
         <div className="footer__sig">
           <img className="footer__heart" src={heartImg} />
           <span className="footer__comma">,</span>
-          <span className="footer__desc">The Trents</span>
+          <span className="footer__desc">the Trents</span>
         </div>
         <div className="footer__tagline">
           Christmas 2014
         </div>
-
       </div>
     )
   }
