@@ -17,11 +17,11 @@ const FAMILY_MEMBERS = [{
 },{
   name: 'Mackenzie',
   photo: require('./images/mackenzie.jpg'),
-  desc: 'Finding her beautiful self.  Prancing and twirling to real and imagined ballet or princess-ready occasions.'
+  desc: 'Finding her beautiful self.  Prancing and twirling to real and imagined ballet or princess-ready occasions.  So sweet.'
 }, {
   name: 'Alaura',
   photo: require('./images/alaura.jpg'),
-  desc: 'Climbing all vertical structures.  Still giving sweet hugs.  Gushing parents can\'t resist her goodness.'
+  desc: 'Climbing all vertical structures.  Still giving sweet hugs.  New words always coming.  Gushing parents can\'t resist her goodness.'
 }]
 
 

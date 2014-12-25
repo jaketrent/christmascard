@@ -1,5 +1,7 @@
 const React = require('react')
 
+const Footer = require('./footer')
+
 require('./message.scss')
 
 module.exports = React.createClass({
@@ -28,6 +30,7 @@ module.exports = React.createClass({
         <p>
           Merry Christmas, and God bless us, every one!
         </p>
+        <Footer />
       </div>
     )
   }
