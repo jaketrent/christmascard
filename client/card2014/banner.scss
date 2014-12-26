@@ -18,5 +18,18 @@
   background-position: center bottom;
   background-size: cover;
   -webkit-animation: none;
+}
 
+@media screen and (max-width: 911px) {
+  .banner {
+    min-height: 150px;
+  }
+  .banner--background-ready {
+    min-height: 300px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .banner--background-ready {
+    min-height: 250px;
+  }
 }

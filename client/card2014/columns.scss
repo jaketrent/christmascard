@@ -1,12 +1,31 @@
 .columns {
-  width: 900px;
+  display: flex;
+  flex-flow: row; // 2011 spec
+  flex-direction: row; // 2012 spec
+  box-orient: horizontal;
+  width: 960px;
   max-width: 100%;
   margin: 40px auto;
+  padding: 0 30px;
 }
 .columns__col {
   margin-right: 20px;
+  box-flex: 2;
 
   &:last-child {
     margin-right: 0;
+    box-flex: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .columns {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+  }
+
+  .columns__col {
+    margin: 0;
   }
 }

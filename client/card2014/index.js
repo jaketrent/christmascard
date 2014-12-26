@@ -6,7 +6,6 @@ const Family = require('./family')
 const Message = require('./message')
 const Title = require('./title')
 
-require('style-loader!css!x-flex')
 require('./styles/index.scss')
 
 module.exports = React.createClass({

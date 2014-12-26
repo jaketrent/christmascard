@@ -1,4 +1,4 @@
-const React = require('react/addons')
+const React = require('react')
 
 require('./columns.scss')
 
@@ -9,13 +9,8 @@ module.exports = React.createClass({
   renderChildren() {
     const cx = React.addons.classSet
     return React.Children.map(this.props.children, (child, i) => {
-      const classes = cx({
-        'columns__col': true,
-        'flex-2': i === 0,
-        'flex-1': i === 1
-      })
       return (
-        <div className={classes}>
+        <div className="columns__col">
           {child}
         </div>
       )
@@ -24,7 +19,7 @@ module.exports = React.createClass({
 
   render() {
     return (
-      <div className="flex flex-row columns">
+      <div className="columns">
         {this.renderChildren()}
       </div>
     )
