@@ -22,7 +22,12 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Merry Christmas 2014 from the Trents',
-      template: 'client/index.html'
+      template: 'node_modules/html-webpack-template/index.html',
+      mobile: true,
+      googleAnalytics: {
+        trackingId: 'UA-57941191-1',
+        pageViewOnLoad: true
+      }
     })
   ],
   resolve: {
