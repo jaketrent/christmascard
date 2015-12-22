@@ -1,4 +1,6 @@
-const React = require('react')
-const Card2015  = require('./card2015')
+import React from 'react'
+import { render } from 'react-dom'
 
-React.render(<Card2015 />, document.getElementById('app'))
+import Card2015 from './card2015'
+
+render(<Card2015 />, document.getElementById('app'))

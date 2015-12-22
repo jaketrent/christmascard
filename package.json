@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "main": "server/index.js",
   "scripts": {
-    "start": "webpack-dev-server --port 4200 --progress --debug --devtool sourcemap --output-pathinfo",
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "lint": "eslint client",
     "server": "node server/index",
-    "dist": "webpack -p"
+    "start": "node devServer.js"
   },
   "author": "jaketrent",
   "license": "MIT",
@@ -20,6 +21,8 @@
     "eslint-plugin-babel": "^3.0.0",
     "eslint-plugin-react": "^3.11.3",
     "express": "^4.13.3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.0.1",
