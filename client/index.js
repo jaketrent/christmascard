@@ -1,4 +1,4 @@
 const React = require('react')
-const Card2014  = require('./card2014')
+const Card2015  = require('./card2015')
 
-React.render(<Card2014 />, document.body)
+React.render(<Card2015 />, document.getElementById('app'))
