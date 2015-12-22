@@ -2,5 +2,6 @@
   box-sizing: border-box;
 }
 html {
-  background: red;
+}
+.root {
 }

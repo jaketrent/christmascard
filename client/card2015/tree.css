@@ -1,10 +1,28 @@
+:root {
+  --treeHeight: 640px;
+  --treeWidth: 640px;
+}
+
+.root {
+  position: relative;
+}
+.ornaments {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--treeHeight);
+  width: var(--treeWidth);
+}
 .tree {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--treeHeight);
+  width: var(--treeWidth);
+
   background: green;
   background: url(./tree.jpg) no-repeat center;
   background-size: 90%;
   background-position: 65% 20px;
-
-  height: 640px;
-  width: 640px;
   clip-path: url(#treePath);
 }

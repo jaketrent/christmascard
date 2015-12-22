@@ -5,8 +5,11 @@ import css from './tree.css'
 
 function Tree(props) {
   return (
-    <div >
+    <div className={props.css.root}>
       <div className={props.css.tree}></div>
+      <div className={props.css.ornaments}>
+        {props.children}
+      </div>
       <svg width="100%" height="100%" viewBox="0 0 640 640">
           <defs>
               <clipPath id="treePath">

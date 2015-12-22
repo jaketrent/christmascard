@@ -1,0 +1,64 @@
+:root {
+  --ballHeight: 80px;
+  --ballWidth: 80px;
+}
+
+.root {
+  position: absolute;
+  width: var(--ballWidth);
+  height: var(--ballHeight);
+  display: inline-block;
+}
+.hook {
+
+}
+.top {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 5px;
+  background: linear-gradient(to right, #fb9d23 0%,#ffc578 100%);
+}
+.topActive {
+  display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--ballWidth);
+  height: var(--ballHeight);
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%,rgba(191, 14, 14, 0.48) 100%),
+              linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(169,3,41,0) 30%, rgba(169,3,41,0) 65%, rgba(255,255,255,1) 100%);
+}
+.overlayActive {
+  display: none;
+}
+.ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--ballWidth);
+  height: var(--ballHeight);
+  background: radial-gradient(ellipse at center, #ff3019 0%,#cf0404 100%);
+  border-radius: 50%;
+  background-size: cover;
+  transition: all .1s;
+  transform-origin: center;
+  box-shadow: 0 0 2px red, 0 0 7px gold, 0 0 2px white;
+}
+.ballActive {
+  composes: ball;
+  position: fixed;
+  left: 10vh;
+  top: 10vh;
+  width: 80vh;
+  height: 80vh;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+  transition: all .3s;
+  z-index: 1000;
+}
