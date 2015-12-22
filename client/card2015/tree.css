@@ -1,0 +1,10 @@
+.tree {
+  background: green;
+  background: url(./tree.jpg) no-repeat center;
+  background-size: 90%;
+  background-position: 65% 20px;
+
+  height: 640px;
+  width: 640px;
+  clip-path: url(#treePath);
+}

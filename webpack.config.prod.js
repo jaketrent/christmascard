@@ -35,6 +35,9 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=2&localIdentName=[local]---[hash:base64:5]!postcss!cssnext')
+    }, {
+      test: /\.(jpg|png|gif)$/,
+      loader: 'file?limit=10000&name=[name].[ext]'
     }]
   },
   postcss: [ autoprefixer ],
